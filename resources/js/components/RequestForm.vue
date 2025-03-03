@@ -116,7 +116,7 @@
         </div>
         <div class="flex flex-col mt-2">
           <div class="flex items-center p-3 rounded-t-lg bg-emerald-500">
-            <span class="icon-[mingcute--numbers-90-sort-ascending-fill] size-9"></span>
+            <span class="icon-[ic--baseline-assignment] size-9"></span>
             <div class="divider divider-horizontal"></div>
             <span class="text-2xl font-bold">Remark (หมายเหตุ)</span>
           </div>
@@ -126,7 +126,7 @@
         </div>
         <div class="flex flex-col mt-2 ms-2">
           <div class="flex items-center p-3 rounded-t-lg bg-emerald-500">
-            <span class="icon-[ic--baseline-1k-plus] size-9"></span>
+            <span class="icon-[ic--round-image] size-9"></span>
             <div class="divider divider-horizontal"></div>
             <span class="text-2xl font-bold">Upload Files <span
                 class="p-1 text-red-600 bg-white rounded-full">(ประเภทไฟล์ .jpg, .png, .pdf เป็นต้น)</span></span>
@@ -146,7 +146,7 @@
   <div class="w-full mt-5 overflow-x-auto border border-base-content/25">
     <table class="table">
       <thead>
-        <tr class="border-2 bg-base-300">
+        <tr class="bg-blue-300 border-2">
           <th class="text-xl font-bold">Product & Service</th>
           <th class="text-xl font-bold">Model</th>
           <th class="text-xl font-bold">Brand</th>
@@ -205,7 +205,8 @@ export default {
   },
   
   handlefiles(event) {
-    this.form.files = event.target.files;
+    this.form.files = event.target.files[0];
+    console.log("File uploaded:", this.form.files.name);
   }
 }
 

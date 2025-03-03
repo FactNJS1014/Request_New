@@ -30,7 +30,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="{{route('myrequest')}}" id="myreq">
                             <span class="icon-[tabler--bookmarks-filled] text-2xl"></span>
                             My Request
                         </a>
