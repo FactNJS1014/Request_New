@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import RequestForm from './components/RequestForm.vue';
-import MyRequest from './components/MyRequest.vue';
+import RequestForm from '@/components/RequestForm.vue';
+import MyRequest from '@/components/MyRequest.vue';
 
 
 const routes = [
