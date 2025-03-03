@@ -1,11 +1,8 @@
 import { createApp } from "vue";
-import RequestForm from "./components/RequestForm.vue"
-import MyRequest from "./components/MyRequest.vue";
-
-const rqform = createApp(RequestForm)
-const myrqst = createApp(MyRequest)
-
-rqform.mount("#app");
-myrqst.mount("#myrequest");
+import App from "./components/App.vue";
+import router from './router';
+const app = createApp(App)
+app.use(router)
+app.mount("#app");
 
 
