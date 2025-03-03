@@ -16,9 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('Contents.request');
 })->name('index');
-Route::get('/sidebar', function () {
-    return view('TemplateSidebar.sidebartemp');
-});
 Route::get('/myrequest', function () {
     return view('Contents.myrequest');
 })->name('myrequest');
