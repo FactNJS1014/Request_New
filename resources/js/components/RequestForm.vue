@@ -229,6 +229,9 @@ export default {
       isSavedData: false,
     };
   },
+  mounted() {
+    console.log("Component mounted, initializing form data if necessary.");
+  },
   methods: {
     async submitRequest() {
       if (!this.form.date || !this.form.name || !this.form.section ||
@@ -259,14 +262,14 @@ export default {
       try {
         const res = await axios.post('/Request_New/request/form', formData, {
           headers: {
-            'Content-Type': 'multipart/form-data', // Important for file uploads
+            'Content-Type': 'multipart/form-data',
           }
         });
 
         console.log("Request submitted successfully:", res.data);
         
         if (res.data) {
-          this.isSuccesAlert = true;  // Assuming `isSuccesAlert` is defined in `data()`
+          this.isSuccesAlert = true;
 
           setTimeout(() => {
             this.isSuccesAlert = false;
@@ -277,7 +280,6 @@ export default {
         console.log("Error: " + error);
       }
 
-      // Handle form submission logic here
       console.log("Form submitted:", this.form);
     },
 
@@ -288,3 +290,4 @@ export default {
   }
 }
 </script>
+
