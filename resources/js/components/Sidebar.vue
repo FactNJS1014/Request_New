@@ -8,35 +8,35 @@
         <h3 class="text-2xl font-bold text-white drawer-title">QUOTATION</h3>
       </div>
     </div>
-    <div class="flex flex-col justify-between h-full px-2 drawer-body">
-      <ul class="menu p-0 text-xl space-y-[230px] font-semibold">
-        <div class="p-4 space-y-4">
+    <div class="flex flex-col justify-between h-full px-2">
+      <ul class="bg-white p-3 text-xl space-y-[350px] font-semibold rounded">
+        <div class="p-4 space-y-6">
           <li>
-            <router-link to="/" class="flex items-center gap-2">
+            <router-link to="/" class="flex items-center gap-2" active-class="p-2 text-blue-500 rounded-md bg-slate-300">
               <span class="icon-[tabler--book-filled] text-2xl"></span>
               Request
             </router-link>
           </li>
           <li>
-            <router-link to="/myrequest" class="flex items-center gap-2">
+            <router-link to="/myrequest" class="flex items-center gap-2" active-class="p-2 text-blue-500 rounded-md bg-slate-300">
               <span class="icon-[tabler--bookmarks-filled] text-2xl"></span>
               My Request
             </router-link>
           </li>
           <li>
-            <router-link to="/job-completed" class="flex items-center gap-2">
+            <router-link to="/job-completed" class="flex items-center gap-2" active-class="p-2 text-blue-500 rounded-md bg-slate-300">
               <span class="icon-[tabler--clipboard-check-filled] text-2xl"></span>
               Job Completed
             </router-link>
           </li>
           <li>
-            <router-link to="/job-canceled" class="flex items-center gap-2">
+            <router-link to="/job-canceled" class="flex items-center gap-2" active-class="p-2 text-blue-500 rounded-md bg-slate-300">
               <span class="icon-[tabler--clipboard-x-filled] text-2xl"></span>
               Job Canceled
             </router-link>
           </li>
           <li>
-            <router-link to="/manual" class="flex items-center gap-2">
+            <router-link to="/manual" class="flex items-center gap-2" active-class="p-2 text-blue-500 rounded-md bg-slate-300">
               <span class="icon-[tabler--clipboard-text-filled] text-2xl"></span>
               Manual
             </router-link>
@@ -44,7 +44,7 @@
         </div>
         <div class="p-4">
           <li>
-            <router-link to="/main-menu" class="flex items-center gap-2">
+            <router-link to="/main-menu" class="flex items-center gap-2" active-class="p-2 text-blue-500 rounded-md bg-slate-300">
               <span class="icon-[tabler--logout-2] text-2xl"></span>
               Main Menu
             </router-link>
@@ -55,14 +55,8 @@
   </aside>
 </template>
 
-<script>
-export default {
-  name: "Sidebar"
-};
-</script>
 
-<style scoped>
-.menu li {
-  padding: 10px;
-}
-</style>
+
+
+
+

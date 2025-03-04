@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RequestFormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/{any}', function () {
     return view('app');
 })->where('any', '.*');
+
+Route::post('/request/form',[RequestFormController::class, 'insertForm'])->name('insert.form');
 
 
