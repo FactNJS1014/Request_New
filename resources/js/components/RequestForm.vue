@@ -270,7 +270,7 @@ export default {
 
           setTimeout(() => {
             this.isSuccesAlert = false;
-          }, 3000);
+          }, 1000);
         }
 
       } catch (error) {
