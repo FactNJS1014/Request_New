@@ -174,7 +174,7 @@
     </form>
   </div>
 
-  <div class="w-full mt-5 overflow-x-auto border border-base-content/25">
+  <div class="w-full mt-5 overflow-x-auto border border-base-content/25 horizontal-scrollbar">
     <form>
       <table class="table">
         <thead>
